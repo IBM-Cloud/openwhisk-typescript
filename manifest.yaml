@@ -1,0 +1,27 @@
+packages:
+  cloud-functions-typescript:
+    version: 1.0
+    license: Apache-2.0
+    inputs:
+      boldMd: "**$TEXT**"
+      strikeMd: "~~$TEXT~~"
+    actions:
+      Bold:
+        function: dist-webpack/Bold.js
+        runtime: nodejs@8
+        web-export: true
+      Strikethrough:
+        function: dist-webpack/Strikethrough.js
+        runtime: nodejs@8
+        web-export: true
+    apis:
+      starter-apis:
+        api:
+          bolded:
+            Bold:
+              method: GET
+              response: http
+          striked:
+            Strikethrough:
+              method: GET
+              response: http

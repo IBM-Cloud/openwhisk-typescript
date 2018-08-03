@@ -1,0 +1,28 @@
+{
+  "name": "cloud-functions-typescript",
+  "version": "1.0.0",
+  "description": "IBM Cloud Function Typescript starter",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register test/functionsTest.ts",
+    "bundle": "webpack --config webpack.config.js",
+    "deploy": "wskdeploy -m manifest.yaml"
+  },
+  "author": "van_staub@us.ibm.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.5.5",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "ts-loader": "^4.4.2",
+    "ts-node": "^7.0.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "marked": "^0.4.0"
+  }
+}
