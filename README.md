@@ -20,6 +20,7 @@ The solution to this scenario is [Webpack](https://webpack.js.org/). Now you can
 
 ## Project structure
 
+```
 ├── dist - Typescript output
 ├── dist-webpack - Webpack output (i.e. Cloud Function actions)
 ├── manifest.yaml - wskdeploy manifest
@@ -34,6 +35,7 @@ The solution to this scenario is [Webpack](https://webpack.js.org/). Now you can
 │   └── functionsTest.ts - Unit tests
 ├── tsconfig.json - Typescript config
 └── webpack.config.js - Webpack config
+```
 
 ## Using the starter
 
