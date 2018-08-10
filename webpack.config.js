@@ -1,6 +1,6 @@
 const path = require('path');
 
-const dist = 'dist-webpack';  // 'dist' folder in use by tsconfig output
+const dist = 'dist';  // be aware 'dist' folder is also used for tsconfig output
 
 module.exports = {
   entry: {

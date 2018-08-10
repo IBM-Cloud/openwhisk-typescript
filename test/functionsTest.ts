@@ -13,11 +13,11 @@ const params = {
 describe('cloud-functions-typescript', function () {
 
   it ('bold', () => {
-    expect(Bold(params).html).to.equal(`<p><strong>${params.message}</strong></p>\n`);
+    expect(Bold(params).body).to.equal(`<p><strong>${params.message}</strong></p>\n`);
   });
 
   it ('strikethrough', () => {
-    expect(Strikethrough(params).html).to.equal(`<p><del>${params.message}</del></p>\n`);
+    expect(Strikethrough(params).body).to.equal(`<p><del>${params.message}</del></p>\n`);
   });
 
 });
