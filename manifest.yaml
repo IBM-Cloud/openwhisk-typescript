@@ -8,11 +8,11 @@ packages:
     actions:
       Bold:
         function: dist/Bold.js
-        runtime: nodejs@8
+        runtime: nodejs:8
         web-export: true
       Strikethrough:
         function: dist/Strikethrough.js
-        runtime: nodejs@8
+        runtime: nodejs:8
         web-export: true
     apis:
       starter-apis:
