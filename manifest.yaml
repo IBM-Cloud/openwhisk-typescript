@@ -10,6 +10,8 @@ packages:
         function: dist/Bold.js
         runtime: nodejs:8
         web-export: true
+        inputs:
+          foo: ${FOO}
       Strikethrough:
         function: dist/Strikethrough.js
         runtime: nodejs:8
@@ -20,7 +22,7 @@ packages:
           bolded:
             Bold:
               method: GET
-              response: http
+              response: json
           striked:
             Strikethrough:
               method: GET
